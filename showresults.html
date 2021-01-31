@@ -1,5 +1,75 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
+    <head>
+        <title>Contact List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        
+        <button type="button" onclick="refreshtable.php">Refresh Table</button>
+<br>
+<br>
+        <?php
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
+        include("dbinfo.inc.php");
+        $con = mysqli_connect("138.68.228.126", "drawertl_jgaiten", "BlueJay98!", "drawertl_jgaiten");
+         
+         if (mysqli_connect_errno($con)) {
+             echo "Failed to connect to MySQL: " . mysqli_connect_error();
+             die("I am doomed!!");
+         }
 
+        $query = "SELECT * FROM Contacts";
+        //$query = "SELECT * FROM Owner";
+        $result = mysqli_query($con, $query);
 
+//$num = mysqli_num_rows($result);
+//echo $num;
+        mysqli_close($con);
+
+        echo "<b><center>Database Output</center></b><br><br>";
+        ?>
+        <table border="0" cellspacing="2" cellpadding="2">
+            <tr> 
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Mobile</th>
+                <th>Fax</th>
+                <th>E-mail</th>
+                <th>Website</th>
+            </tr>
+
+            <?php
+            while ($row = mysqli_fetch_array($result)) {
+
+                $id = $row['id'];
+                $first = $row['first'];
+                $last = $row['last'];
+                $phone = $row['phone'];
+                $mobile = $row['mobile'];
+                $fax = $row['fax'];
+                $email = $row['email'];
+                $web = $row['web'];
+                ?>
+
+                <tr> 
+                    <td><?php echo "$id"; ?></td>
+                    <td><?php echo "$first $last"; ?></td>
+                    <td><?php echo "$phone"; ?></td>
+                    <td><?php echo "$mobile"; ?></td>
+                    <td><?php echo "$fax"; ?></td>
+                    <td><?php echo $email; ?></td>
+                    <td><?php echo $web; ?></td>
+                </tr>
+
+    <?php
+}
+echo "</table>";
+?>
+   
+    </body>
 </html>

@@ -1,0 +1,84 @@
+{
+ "selection1": [
+  {
+   "name": "Harris Teeter Thin Sandwich Bread",
+   "price": "$1.29"
+  },
+  {
+   "name": "Natures Own Whitewheat Healthy White Bread",
+   "price": "$2.99"
+  },
+  {
+   "name": "Harris Teeter Bread - Honey Wheat",
+   "price": "$1.99"
+  },
+  {
+   "name": "Nature's Own Honey Wheat Bread",
+   "price": "$3.49"
+  },
+  {
+   "name": "Harris Teeter Old Fashioned Bread",
+   "price": "$1.29"
+  },
+  {
+   "name": "Kings Hawaiian Bread",
+   "price": "$4.99"
+  },
+  {
+   "name": "Arnold Bread - Whole Grains 12 Grain",
+   "price": "$4.49"
+  },
+  {
+   "name": "Arnold Bread - Country White",
+   "price": "$4.49"
+  },
+  {
+   "name": "Arnold Bread - Country Oatmeal",
+   "price": "$4.49"
+  },
+  {
+   "name": "Sara Lee Bread - Classic White",
+   "price": "$2.99"
+  },
+  {
+   "name": "Arnold Bread - Real Jewish Rye with Seeds",
+   "price": "$3.79"
+  },
+  {
+   "name": "Arnold Bread - Real Jewish Rye - Seedless",
+   "price": "$3.79"
+  },
+  {
+   "name": "Alvarado St. Bakery Bread - California Style - Complete Protein",
+   "price": "$4.49"
+  },
+  {
+   "name": "Alvarado St. Bakery Bread - Organic Sprouted Multi-Grain",
+   "price": "$4.49"
+  },
+  {
+   "name": "Arnold Bread - Real Jewish Pumpernickel Dark Rye",
+   "price": "$3.79"
+  },
+  {
+   "name": "Arnold Bread - Real Jewish Rye - Melba Thin Seedless",
+   "price": "$3.79"
+  },
+  {
+   "name": "Arnold Bread - Whole Grains Health Nut",
+   "price": "$4.49"
+  },
+  {
+   "name": "Arnold Bread - Whole Grains Healthy Multi-Grain",
+   "price": "$4.49"
+  },
+  {
+   "name": "Feldkamp Bread - Pumpernickel",
+   "price": "$3.49"
+  },
+  {
+   "name": "Feldkamp Bread - Sunflower Seed",
+   "price": "$3.49"
+  }
+ ]
+}
